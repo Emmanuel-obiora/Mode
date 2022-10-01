@@ -9,7 +9,6 @@ body {
     background-color: white;
     color: white;
     font-size: 25px;
-    background-image: url("./img/dark-forest5.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -48,10 +47,28 @@ body {
     display: flex;
     font-size: 20px;
 }
-.time-mode > img {
-    width: 2%;
-    height: 3vh;
+.images{
+    top:0;
+    left:0;
+    position: relative;
     margin-right: 10px;
+}
+.image1{
+    top:0;
+    left:0;
+    position:relative;
+
+}
+.image2{
+    top: 20;
+    left: 20;
+    position: absolute;
+}
+.images > img{
+    width: 75%;
+    height: 4.2vh;
+    visibility: hidden;
+    margin-right: -5px;
 }
 .but-mid{
     display: flex;
@@ -81,29 +98,6 @@ body {
     width: 5rem;
     font-size: 14px;
     color: grey;
-}
-
-/* Below are the css styling for the dark mode functionalities and desktop mode */
-.dark-mode {
-    background-color: black;
-    color: white;
-    background-image: url("./img/dark-forest1.jpg");
-}
-.dark-mode .toggle{
-    border-color: blue;
-}
-.toggle{
-    border-radius: 14px;
-    width: 7%;
-    height: 1.5rem;
-    font-size: 14px;
-    border-color: gold;
-    transition: .5ms ease;
-    cursor: pointer;
-}
-.togglebtn{
-    text-align: right;
-    margin-right: 5px;
 }
 
 @media only screen and (max-width: 1200px){

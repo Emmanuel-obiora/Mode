@@ -4,15 +4,31 @@ function displayTime(){
     var hrs = dateTime.getHours()  + 5; //this switches between Nigerian time and UK time
     var min = dateTime.getMinutes();
     var timing = document.getElementById('but-top');
+    let img1 = document.getElementById('day');
+    let img2 = document.getElementById('night');
+
 
     if (hrs >= 12 && hrs <= 15){
         timing.innerHTML = "GOOD AFTERNOON, IT'S CURRENTLY";
+        img1.style.visibility = 'visible';
+        document.body.style.backgroundImage = "url('img/bright-forest5.jpg')";
     }
-    else if(hrs >= 16 && hrs <= 23){
+    else if(hrs >= 16 && hrs <= 19){
         timing.innerHTML = "GOOD EVENING, IT'S CURRENTLY";
+        img1.style.visibility = 'visible';
+        document.body.style.backgroundImage = "url('img/bright-forest5.jpg')";
+    }
+    else if(hrs >= 20 && hrs <= 23){
+        timing.innerHTML = "GOOD EVENING, IT'S CURRENTLY";
+        img1.style.visibility = 'hidden';
+        img2.style.visibility = 'visible';
+        document.body.style.backgroundImage = "url('img/dark-forest1.jpg')";
     }
     else{
         timing.innerHTML = "GOOD MORNING, IT'S CURRENTLY";
+        img1.style.visibility = 'visible';
+        document.body.style.backgroundImage = "url('img/bright-forest5.jpg')";
+        
     }
 
     // This line here correct the spill over time and returns it to accurate state
@@ -32,33 +48,3 @@ function displayTime(){
     document.getElementById('minutes').innerHTML = min;
 }
 setInterval(displayTime, 10);
-
-
-// Function to toggle between light and dark mode
-function myFunction() {
-    var mode = document.getElementById('mode');
-    var element = document.body;
-    element.classList.toggle("dark-mode");
-    
-    if (mode.innerHTML == 'Dark mode'){
-        mode.innerHTML = 'Light mode';
-
-    }
-    else {
-        mode.innerHTML = 'Dark mode';
-    }
-} 
-
-this.state = JSON.parse(window.localStorage.getItem('state')) || {
-    items: []
-  };
-
-
-// this.addItem = this.addItem.bind(this);
-// this.deleteItem = this.deleteItem.bind(this);
-// }
-
-// setState(state) {
-// window.localStorage.setItem('state', JSON.stringify(state));
-// super.setState(state);
-// }
