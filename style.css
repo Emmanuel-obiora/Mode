@@ -3,43 +3,20 @@
     margin: 0;
     box-sizing: border-box;
 }
+/* Page styling for day time and destop mode */
 body {
     padding: 10px;
     background-color: white;
-    color: black;
-    font-size: 25px;
-    background: url("./img/dark-forest5.jpg");
-    height: 100vh;
-    width: 100%;
-}
-.dark-mode {
-    background-color: black;
     color: white;
-    background: url("./img/dark-forest1.jpg");
-    height: 100vh;
-    width: 100%;
-}
-.dark-mode .toggle{
-    border-color: blue;
-}
-.toggle{
-    border-radius: 14px;
-    width: 7%;
-    height: 1.5rem;
-    font-size: 14px;
-    border-color: gold;
-    transition: .5ms ease;
-    cursor: pointer;
-}
-.togglebtn{
-    text-align: right;
-}
-.main-page{
-    height:100vh;
+    font-size: 25px;
+    background-image: url("./img/dark-forest5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100vh;
     width: 100%;
 }
 .page-container{
-    height: 100vh;
     margin-left: 9rem;
     display: block;
     justify-content: space-between;
@@ -55,32 +32,25 @@ body {
 }
 
 .sec-top > p{
-    font-size: 17px;
+    font-size: 19px;
     margin-top: 10px;
 }
-/* .sec-top a{
-    background-color: white;
-} */
 .sec-top a img{
-    width: 50%;
-    height: 2vh;
-    margin-top: 15px;
+    width: 52%;
+    height: 2.8vh;
+    margin-top: 16px;
     margin-left: 10px;
 }
 .buttom{
-    margin-bottom: 0;
     margin-top: 17rem;
 }
 .time-mode{
     display: flex;
     font-size: 20px;
-    
 }
 .time-mode > img {
     width: 2%;
     height: 3vh;
-    background:white;
-    /* display: none; */
     margin-right: 10px;
 }
 .but-mid{
@@ -109,9 +79,284 @@ body {
     border-radius: 20px;
     height: 1.5rem;
     width: 5rem;
-    font-size: 18px;
+    font-size: 14px;
     color: grey;
 }
 
+/* Below are the css styling for the dark mode functionalities and desktop mode */
+.dark-mode {
+    background-color: black;
+    color: white;
+    background-image: url("./img/dark-forest1.jpg");
+}
+.dark-mode .toggle{
+    border-color: blue;
+}
+.toggle{
+    border-radius: 14px;
+    width: 7%;
+    height: 1.5rem;
+    font-size: 14px;
+    border-color: gold;
+    transition: .5ms ease;
+    cursor: pointer;
+}
+.togglebtn{
+    text-align: right;
+    margin-right: 5px;
+}
 
-
+@media only screen and (max-width: 1200px){
+    /*Tablets [900px -> 1200px]*/
+    .page-container{
+        margin-left: 3.5rem;
+    }
+    .sec-top > p{
+        font-size: 22px;
+    }
+    .sec-top a img{
+        width: 49%;
+        height: 1.6vh;
+        margin-left: 12px;
+        margin-top: 18px;
+    }
+    .buttom{
+        margin-top: 22rem;
+    }
+    .time-mode > img {
+        width: 1.9%;
+        height: 2.5vh;
+        margin-right: 5px;
+        margin-top: 4px;
+    }
+    .container{
+        margin-top: 13px;
+    }
+    .but-mid h3{
+        margin-top: 80px;
+        margin-left: 30px;
+        font-size: 24px;
+    }
+    .but-but{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        margin-right: 10rem;
+    }
+    
+    /* Below are the css styling for the dark mode functionalities */
+    .dark-mode .toggle{
+        border-color: blue;
+    }
+    .toggle{
+        border-radius: 25px;
+        width: 8%;
+        height: 2.5rem;
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 899px){
+    /* Small Tablets [601 -> 899px*/
+    .page-container{
+        margin-left: 3rem;
+        display: block;
+        justify-content: space-between;
+    }
+    .top > h3{
+        margin-top: 18px;
+        font-size: 30px;
+    }
+    
+    .sec-top > p{
+        font-size: 28px;
+        margin-top: 21px;
+        width: 80%;
+    }
+    .sec-top a img{
+        width: 50%;
+        height: 1.8vh;
+        margin-top: 28px;
+    }
+    .buttom{
+        margin-top: 23rem;
+    }
+    .time-mode{
+        display: flex;
+        font-size: 25px;
+    }
+    .time-mode > img {
+        width: 4%;
+        height: 2.5vh;
+        margin-right: 5px;
+        margin-top: 1.5px;
+    }
+    .container{
+        margin-top: 15px;
+        font-size: 100px;
+    }
+    .but-mid h3{
+        font-size: 21px;
+        margin-top: 85px;
+        margin-left: 30px;
+    }
+    .but-but{
+        display: block;
+        margin-top: 15px;
+        font-size: 25px;
+        margin-right: 0rem;
+    }
+    .but-but select{
+        margin-top: 30px;
+        height: 1.5rem;
+        width: 4rem;
+        font-size: 13px;
+    }
+    
+    /* Below are the css styling for the dark mode functionalities */
+    .toggle{
+        border-radius: 18px;
+        width: 9%;
+        height: 2.5rem;
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 600px){
+	/*Big smartphones [414px -> 896px]*/
+    .page-container{
+        margin-left: 3rem;
+    }
+    .top > h3{
+        margin-top: 20px;
+        font-size: 27px;
+    }
+    .sec-top > p{
+        width: 83%;
+        font-size: 25px;
+        margin-top: 18px;
+    }
+    .sec-top a img{
+        margin-top: 26px;
+        margin-left: 1px;
+        width: 70%;
+    }
+    .buttom{
+        margin-top: 18rem;
+    }
+    .time-mode{
+        display: flex;
+        font-size: 19px;
+    }
+    .time-mode > img {
+        width: 4%;
+        height: 2.5vh;
+        margin-right: 3px;
+        margin-top: -1px;
+    }
+    .but-mid{
+        display: flex;
+    
+    }
+    .container{
+        margin-top: 15px;
+        font-size: 85px;
+    }
+    .but-mid h3{
+        margin-left:17px;
+        font-size: 21px;
+        margin-top: 75px;
+    }
+    .but-but{
+        margin-top: 20px;
+        display: block;
+        text-align: left;
+        margin-right: 3rem;
+    }
+    .but-but select{
+        margin-top: 30px;
+        border-radius: 20px;
+        height: 1.5rem;
+        width: 4rem;
+        font-size: 13px;
+        color: grey;
+    }
+    
+    /* Below are the css styling for the dark mode functionalities */
+    .toggle{
+        border-radius: 20px;
+        width: 12%;
+        height: 2.5rem;
+        font-size: 11px;
+    }
+}
+@media only screen and (max-width: 413px){
+	/*Small smartphones [325px -> 413px]*/
+    .page-container{
+        margin-left: 1.5rem;
+    }
+    .top > h3{
+        margin-top: 18px;
+        text-align: left;
+        margin-right: 11px;
+    }
+    .sec-top > p{
+        width: 85%;
+        font-size: 22px;
+        margin-top: 11px;
+        text-align: left;
+    }
+    .sec-top a img{
+        margin-top: 19px;
+        margin-left: 5px;
+        width: 10px;
+    }
+    .buttom{
+        margin-top: 6rem;
+    }
+    .time-mode{
+        display: flex;
+        font-size: 23px;
+        text-align: center;
+    }
+    .time-mode > img {
+        width: 5.5%;
+        height: 2.3vh;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        justify-content: center;
+    }
+    .but-mid{
+        display: flex;
+    }
+    .container{
+        margin-top: 10px;
+        font-size: 70px;
+    }
+    .but-mid h3{
+        margin-left:20px;
+        font-size: 21px;
+        margin-top: 60px;
+    }
+    .but-but{
+        margin-top: 10px;
+        display: block;
+        text-align: center;
+        margin-right: 0rem;
+    }
+    .but-but select{
+        margin-top: 30px;
+        border-radius: 20px;
+        height: 1.5rem;
+        width: 4rem;
+        font-size: 13px;
+        color: grey;
+    }
+    
+    /* Below are the css styling for the dark mode functionalities */
+    .toggle{
+        border-radius: 20px;
+        width: 13%;
+        height: 2.6rem;
+        font-size: 10px;
+        
+    }
+}
