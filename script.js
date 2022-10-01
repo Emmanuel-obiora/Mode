@@ -1,4 +1,6 @@
-// function for displaying time and also greeting base on the clock time
+// function for displaying time and automation of greeeting, 
+//day/night mode, display of sun/moon pictures
+
 function displayTime(){
     var dateTime = new Date();
     var hrs = dateTime.getHours()  + 5; //this switches between Nigerian time and UK time
@@ -11,23 +13,23 @@ function displayTime(){
     if (hrs >= 12 && hrs <= 15){
         timing.innerHTML = "GOOD AFTERNOON, IT'S CURRENTLY";
         img1.style.visibility = 'visible';
-        document.body.style.backgroundImage = "url('img/bright-forest5.jpg')";
+        document.body.style.backgroundImage = "url('img/bright-forest.jpg')";
     }
     else if(hrs >= 16 && hrs <= 19){
         timing.innerHTML = "GOOD EVENING, IT'S CURRENTLY";
         img1.style.visibility = 'visible';
-        document.body.style.backgroundImage = "url('img/bright-forest5.jpg')";
+        document.body.style.backgroundImage = "url('img/bright-forest.jpg')";
     }
     else if(hrs >= 20 && hrs <= 23){
         timing.innerHTML = "GOOD EVENING, IT'S CURRENTLY";
         img1.style.visibility = 'hidden';
         img2.style.visibility = 'visible';
-        document.body.style.backgroundImage = "url('img/dark-forest1.jpg')";
+        document.body.style.backgroundImage = "url('img/dark-forest.jpg')";
     }
     else{
         timing.innerHTML = "GOOD MORNING, IT'S CURRENTLY";
         img1.style.visibility = 'visible';
-        document.body.style.backgroundImage = "url('img/bright-forest5.jpg')";
+        document.body.style.backgroundImage = "url('img/bright-forest.jpg')";
         
     }
 

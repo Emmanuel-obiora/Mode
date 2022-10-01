@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-/* Page styling for day time and destop mode */
+/* Page styling for destop mode [1201px and above]*/
 body {
     padding: 10px;
     background-color: white;
@@ -32,16 +32,16 @@ body {
 
 .sec-top > p{
     font-size: 19px;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 .sec-top a img{
     width: 52%;
     height: 2.8vh;
-    margin-top: 16px;
+    margin-top: 36px;
     margin-left: 10px;
 }
 .buttom{
-    margin-top: 17rem;
+    margin-top: 19rem;
 }
 .time-mode{
     display: flex;
@@ -112,7 +112,7 @@ body {
         width: 49%;
         height: 1.6vh;
         margin-left: 12px;
-        margin-top: 18px;
+        margin-top: 38px;
     }
     .buttom{
         margin-top: 22rem;
@@ -137,20 +137,9 @@ body {
         justify-content: space-between;
         margin-right: 10rem;
     }
-    
-    /* Below are the css styling for the dark mode functionalities */
-    .dark-mode .toggle{
-        border-color: blue;
-    }
-    .toggle{
-        border-radius: 25px;
-        width: 8%;
-        height: 2.5rem;
-        font-size: 16px;
-    }
 }
 @media only screen and (max-width: 899px){
-    /* Small Tablets [601 -> 899px*/
+    /* Small Tablets [601 -> 899px]*/
     .page-container{
         margin-left: 3rem;
         display: block;
@@ -169,7 +158,7 @@ body {
     .sec-top a img{
         width: 50%;
         height: 1.8vh;
-        margin-top: 28px;
+        margin-top: 30px;
     }
     .buttom{
         margin-top: 23rem;
@@ -185,7 +174,7 @@ body {
         margin-top: 1.5px;
     }
     .container{
-        margin-top: 15px;
+        margin-top: 10px;
         font-size: 100px;
     }
     .but-mid h3{
@@ -195,7 +184,7 @@ body {
     }
     .but-but{
         display: block;
-        margin-top: 15px;
+        margin-top: 5px;
         font-size: 25px;
         margin-right: 0rem;
     }
@@ -205,17 +194,9 @@ body {
         width: 4rem;
         font-size: 13px;
     }
-    
-    /* Below are the css styling for the dark mode functionalities */
-    .toggle{
-        border-radius: 18px;
-        width: 9%;
-        height: 2.5rem;
-        font-size: 12px;
-    }
 }
 @media only screen and (max-width: 600px){
-	/*Big smartphones [414px -> 896px]*/
+	/*Big smartphones [414px -> 600px]*/
     .page-container{
         margin-left: 3rem;
     }
@@ -273,14 +254,6 @@ body {
         font-size: 13px;
         color: grey;
     }
-    
-    /* Below are the css styling for the dark mode functionalities */
-    .toggle{
-        border-radius: 20px;
-        width: 12%;
-        height: 2.5rem;
-        font-size: 11px;
-    }
 }
 @media only screen and (max-width: 413px){
 	/*Small smartphones [325px -> 413px]*/
@@ -304,12 +277,12 @@ body {
         width: 10px;
     }
     .buttom{
-        margin-top: 6rem;
+        margin-top: 9rem;
     }
     .time-mode{
         display: flex;
         font-size: 23px;
-        text-align: center;
+        text-align: left;
     }
     .time-mode > img {
         width: 5.5%;
@@ -333,24 +306,16 @@ body {
     .but-but{
         margin-top: 10px;
         display: block;
-        text-align: center;
+        text-align: left;
         margin-right: 0rem;
     }
     .but-but select{
         margin-top: 30px;
+        margin-left: 7rem;
         border-radius: 20px;
         height: 1.5rem;
         width: 4rem;
         font-size: 13px;
         color: grey;
-    }
-    
-    /* Below are the css styling for the dark mode functionalities */
-    .toggle{
-        border-radius: 20px;
-        width: 13%;
-        height: 2.6rem;
-        font-size: 10px;
-        
     }
 }
