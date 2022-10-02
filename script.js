@@ -3,39 +3,36 @@
 
 function displayTime(){
     var dateTime = new Date();
-    var hrs = dateTime.getHours()  + 5; //this switches between Nigerian time and UK time
+    var hrs = dateTime.getHours();
     var min = dateTime.getMinutes();
     var timing = document.getElementById('but-top');
     let img1 = document.getElementById('day');
     let img2 = document.getElementById('night');
+    let img3 = document.getElementById('midDay');
+    let img4 = document.getElementById('sunrise')
 
 
     if (hrs >= 12 && hrs <= 15){
         timing.innerHTML = "GOOD AFTERNOON, IT'S CURRENTLY";
-        img1.style.visibility = 'visible';
+        img3.style.visibility = 'visible';
         document.body.style.backgroundImage = "url('img/bright-forest.jpg')";
     }
     else if(hrs >= 16 && hrs <= 19){
         timing.innerHTML = "GOOD EVENING, IT'S CURRENTLY";
         img1.style.visibility = 'visible';
-        document.body.style.backgroundImage = "url('img/bright-forest.jpg')";
+        document.body.style.backgroundImage = "url('img/forest-sunrise.jpg')";
     }
     else if(hrs >= 20 && hrs <= 23){
         timing.innerHTML = "GOOD EVENING, IT'S CURRENTLY";
-        img1.style.visibility = 'hidden';
         img2.style.visibility = 'visible';
         document.body.style.backgroundImage = "url('img/dark-forest.jpg')";
+        document.body.style.backgroundColor = 'black';
     }
     else{
         timing.innerHTML = "GOOD MORNING, IT'S CURRENTLY";
-        img1.style.visibility = 'visible';
-        document.body.style.backgroundImage = "url('img/bright-forest.jpg')";
+        img4.style.visibility = 'visible';
+        document.body.style.backgroundImage = "url('img/forest-sunrise.jpg')";
         
-    }
-
-    // This line here correct the spill over time and returns it to accurate state
-    if (hrs >= 24 && hrs <= 29){
-        hrs = hrs - 24;
     }
     
     // The code below helps to output O for digits less than 10

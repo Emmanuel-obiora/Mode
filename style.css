@@ -21,7 +21,7 @@ body {
     justify-content: space-between;
 }
 .top > h3{
-    margin-top: 10px;
+    margin-top: 11px;
 }
 
 .sec-top{
@@ -31,8 +31,9 @@ body {
 }
 
 .sec-top > p{
-    font-size: 19px;
+    font-size: 21px;
     margin-top: 30px;
+    width: 47%;
 }
 .sec-top a img{
     width: 52%;
@@ -51,7 +52,7 @@ body {
     top:0;
     left:0;
     position: relative;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 .image1{
     top:0;
@@ -64,11 +65,21 @@ body {
     left: 20;
     position: absolute;
 }
+.image3{
+    top: 20;
+    left: 20;
+    position: absolute;
+}
+.image4{
+    top: 20;
+    left: 20;
+    position: absolute;
+}
 .images > img{
-    width: 75%;
+    width: 100%;
     height: 4.2vh;
     visibility: hidden;
-    margin-right: -5px;
+    margin-right: -15px;
 }
 .but-mid{
     display: flex;
@@ -90,14 +101,47 @@ body {
 .but-but{
     display: flex;
     justify-content: space-between;
-    margin-right: 20rem;
+    margin-right: 10rem;
 }
-.but-but select{
-    border-radius: 20px;
-    height: 1.5rem;
-    width: 5rem;
-    font-size: 14px;
+select {
+    box-shadow: 0 10px 25px grey;
+    font-size: .8rem;
+    padding: 0.5em 2.5em 0.5em 1em;
+    border-radius: 25px;
+    border: 0;
     color: grey;
+    appearance: none;
+
+}
+.cus-select{
+    position: relative;
+}
+.cus-arrow{
+    position: absolute;
+    top: 0.53rem;
+    left: 3.85rem;
+    display: block;
+    background: rgb(68, 67, 67);
+    height: 1.2rem;
+    width: 1.3rem;
+    border-radius: 100%;
+    pointer-events: none;
+}
+.cus-arrow::before {
+    --size: 0.22em;
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 51.5%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+
+}
+.cus-arrow::before {
+    border-left: var(--size) solid transparent;
+    border-right: var(--size)  solid transparent;
+    border-top: var(--size)  solid white;
 }
 
 @media only screen and (max-width: 1200px){
@@ -106,7 +150,11 @@ body {
         margin-left: 3.5rem;
     }
     .sec-top > p{
-        font-size: 22px;
+        width: 50%;
+        font-size: 24px;
+    }
+    .top > h3{
+        margin-top: 20px;
     }
     .sec-top a img{
         width: 49%;
@@ -136,7 +184,7 @@ body {
         display: flex;
         justify-content: space-between;
         margin-right: 10rem;
-    }
+    }   
 }
 @media only screen and (max-width: 899px){
     /* Small Tablets [601 -> 899px]*/
@@ -179,7 +227,7 @@ body {
     }
     .but-mid h3{
         font-size: 21px;
-        margin-top: 85px;
+        margin-top: 81px;
         margin-left: 30px;
     }
     .but-but{
@@ -188,26 +236,25 @@ body {
         font-size: 25px;
         margin-right: 0rem;
     }
-    .but-but select{
-        margin-top: 30px;
-        height: 1.5rem;
-        width: 4rem;
-        font-size: 13px;
+    .cus-select{
+        margin-top: 3rem;
     }
 }
 @media only screen and (max-width: 600px){
 	/*Big smartphones [414px -> 600px]*/
     .page-container{
-        margin-left: 3rem;
+        margin-left: 2.5rem;
     }
     .top > h3{
         margin-top: 20px;
         font-size: 27px;
+        margin-left: 22%;
     }
     .sec-top > p{
-        width: 83%;
+        width: 81%;
         font-size: 25px;
         margin-top: 18px;
+        text-align: center;
     }
     .sec-top a img{
         margin-top: 26px;
@@ -222,9 +269,8 @@ body {
         font-size: 19px;
     }
     .time-mode > img {
-        width: 4%;
+        width: 5%;
         height: 2.5vh;
-        margin-right: 3px;
         margin-top: -1px;
     }
     .but-mid{
@@ -246,13 +292,8 @@ body {
         text-align: left;
         margin-right: 3rem;
     }
-    .but-but select{
-        margin-top: 30px;
-        border-radius: 20px;
-        height: 1.5rem;
-        width: 4rem;
-        font-size: 13px;
-        color: grey;
+    .cus-select{
+        margin-top: 4rem;
     }
 }
 @media only screen and (max-width: 413px){
@@ -262,14 +303,14 @@ body {
     }
     .top > h3{
         margin-top: 18px;
-        text-align: left;
-        margin-right: 11px;
+        margin-left: 15%;
     }
     .sec-top > p{
-        width: 85%;
+        width: 78%;
         font-size: 22px;
         margin-top: 11px;
-        text-align: left;
+        text-align: center;
+
     }
     .sec-top a img{
         margin-top: 19px;
@@ -282,10 +323,9 @@ body {
     .time-mode{
         display: flex;
         font-size: 23px;
-        text-align: left;
     }
     .time-mode > img {
-        width: 5.5%;
+        width: 5.6%;
         height: 2.3vh;
         margin-right: 0px;
         margin-bottom: 0px;
@@ -301,7 +341,7 @@ body {
     .but-mid h3{
         margin-left:20px;
         font-size: 21px;
-        margin-top: 60px;
+        margin-top: 54px;
     }
     .but-but{
         margin-top: 10px;
@@ -309,13 +349,7 @@ body {
         text-align: left;
         margin-right: 0rem;
     }
-    .but-but select{
-        margin-top: 30px;
-        margin-left: 7rem;
-        border-radius: 20px;
-        height: 1.5rem;
-        width: 4rem;
-        font-size: 13px;
-        color: grey;
+    .cus-select{
+        margin-top: 2rem;
     }
 }
