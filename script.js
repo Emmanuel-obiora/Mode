@@ -3,7 +3,7 @@
 
 function displayTime(){
     var dateTime = new Date();
-    var hrs = dateTime.getHours();
+    var hrs = dateTime.getHours() - 10;
     var min = dateTime.getMinutes();
     var timing = document.getElementById('but-top');
     let img1 = document.getElementById('day');
