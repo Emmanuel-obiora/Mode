@@ -9,7 +9,7 @@ function displayTime(){
     let img1 = document.getElementById('day');
     let img2 = document.getElementById('night');
     let img3 = document.getElementById('midDay');
-    let img4 = document.getElementById('sunrise')
+    let img4 = document.getElementById('sunrise');
 
 
     if (hrs >= 12 && hrs <= 15){

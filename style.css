@@ -76,7 +76,7 @@ body {
     position: absolute;
 }
 .images > img{
-    width: 100%;
+    width: 130%;
     height: 4.2vh;
     visibility: hidden;
     margin-right: -15px;
