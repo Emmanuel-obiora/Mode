@@ -31,7 +31,7 @@ function displayTime(){
     else{
         timing.innerHTML = "GOOD MORNING, IT'S CURRENTLY";
         img4.style.visibility = 'visible';
-        document.body.style.backgroundImage = "url('img/sunrise.jpg')";
+        document.body.style.backgroundImage = "url('img/sunrise-bg.jpg')";
         
     }
     
