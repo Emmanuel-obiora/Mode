@@ -6,8 +6,7 @@
 /* Page styling for destop mode [1201px and above]*/
 body {
     padding: 10px;
-    background-color: white;
-    color: white;
+    color: rgb(249, 249, 249);
     font-size: 25px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -47,12 +46,14 @@ body {
 .time-mode{
     display: flex;
     font-size: 20px;
+    width: 100%;
+    align-items: center;
 }
 .images{
     top:0;
     left:0;
     position: relative;
-    margin-right: 15px;
+    margin-right: 20px;
 }
 .image1{
     top:0;
@@ -76,32 +77,52 @@ body {
     position: absolute;
 }
 .images > img{
-    width: 130%;
+    width: 70%;
     height: 4.2vh;
     visibility: hidden;
-    margin-right: -15px;
 }
 .but-mid{
     display: flex;
-
 }
 .container{
+    display: flex;
     font-family:Arial, Helvetica, sans-serif;
     color:#fff;
     font-weight:bold;
     font-size: 100px;
     width: auto;
+    align-items: center;
+}
+.main-dot{
+    display: block;
+    margin: 8px 20px 0px 20px;
+}
+.dot1 {
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.dot2 {
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-top: 0.9rem;
 }
 .but-mid h3{
     margin-left:18px;
     font-size: 25px;
-    margin-top: 70px;
+    margin-top: 68px;
     font-weight: lighter;
 }
 .but-but{
     display: flex;
     justify-content: space-between;
     margin-right: 10rem;
+}
+h3{
+    color: rgb(255, 255, 255);
 }
 select {
     box-shadow: 0 10px 25px black;
@@ -166,7 +187,7 @@ select {
         margin-top: 22rem;
     }
     .time-mode > img {
-        width: 1.9%;
+        width: 2%;
         height: 2.5vh;
         margin-right: 5px;
         margin-top: 4px;
@@ -215,11 +236,11 @@ select {
         display: flex;
         font-size: 25px;
     }
-    .time-mode > img {
-        width: 4%;
-        height: 2.5vh;
+    .images > img {
+        width: 100%;
+        height: 3.5vh;
         margin-right: 5px;
-        margin-top: 1.5px;
+        margin-top: -33px;
     }
     .container{
         margin-top: 10px;
@@ -268,18 +289,24 @@ select {
         display: flex;
         font-size: 19px;
     }
-    .time-mode > img {
-        width: 5%;
-        height: 2.5vh;
-        margin-top: -1px;
+    .images > img {
+        width: 100%;
+        height: 3.5vh;
+        margin-top: -34px;
     }
     .but-mid{
         display: flex;
-    
     }
     .container{
         margin-top: 15px;
         font-size: 85px;
+    }
+    .main-dot{
+        display: block;
+        margin: 5px 20px 0px 20px;
+    }
+    .dot2{
+        margin-top: 0.5rem;
     }
     .but-mid h3{
         margin-left:17px;
@@ -310,7 +337,6 @@ select {
         font-size: 22px;
         margin-top: 11px;
         text-align: center;
-
     }
     .sec-top a img{
         margin-top: 19px;
@@ -324,12 +350,11 @@ select {
         display: flex;
         font-size: 23px;
     }
-    .time-mode > img {
-        width: 5.6%;
-        height: 2.3vh;
+    .images > img {
+        width: 100%;
+        height: 4vh;
         margin-right: 0px;
-        margin-bottom: 0px;
-        justify-content: center;
+        margin-top: -38px;
     }
     .but-mid{
         display: flex;
@@ -337,6 +362,19 @@ select {
     .container{
         margin-top: 10px;
         font-size: 70px;
+    }
+    .main-dot{
+        display: block;
+        margin: 5px 20px 0px 20px;
+    }
+    .dot1 {
+        height: 20px;
+        width: 20px;
+    }
+    .dot2 {
+        height: 20px;
+        width: 20px;
+        margin-top: 0.5rem;
     }
     .but-mid h3{
         margin-left:20px;

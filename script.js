@@ -20,18 +20,18 @@ function displayTime(){
     else if(hrs >= 16 && hrs <= 19){
         timing.innerHTML = "GOOD EVENING, IT'S CURRENTLY";
         img1.style.visibility = 'visible';
-        document.body.style.backgroundImage = "url('img/forest-sunrise.jpg')";
+        document.body.style.backgroundImage = "url('img/sunset.jpg')";
     }
     else if(hrs >= 20 && hrs <= 23){
         timing.innerHTML = "GOOD EVENING, IT'S CURRENTLY";
         img2.style.visibility = 'visible';
-        document.body.style.backgroundImage = "url('img/dark-forest.jpg')";
+        document.body.style.backgroundImage = "url('img/darkForest.jpg')";
         document.body.style.backgroundColor = 'black';
     }
     else{
         timing.innerHTML = "GOOD MORNING, IT'S CURRENTLY";
         img4.style.visibility = 'visible';
-        document.body.style.backgroundImage = "url('img/forest-sunrise.jpg')";
+        document.body.style.backgroundImage = "url('img/sunrise.jpg')";
         
     }
     
