@@ -22,7 +22,7 @@ function displayTime(){
 
         
     }
-    else if(hrs >= 16 && hrs <= 19){
+    else if(hrs >= 16 && hrs <= 18){
         document.body.style.backgroundImage = "url('img/sunset.jpg')";
         img1.style.visibility = 'visible';
     }
@@ -49,4 +49,4 @@ function displayTime(){
     document.getElementById('hours').innerHTML = hrs;
     document.getElementById('minutes').innerHTML = min;
 }
-setInterval(displayTime, 10);
+setInterval(displayTime, 10);41

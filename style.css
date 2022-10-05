@@ -48,35 +48,40 @@ body {
     font-size: 20px;
     width: 100%;
     align-items: center;
+    height: 4vh;
+
 }
 .images{
     top:0;
     left:0;
     position: relative;
-    margin-right: 20px;
+    width: 7%;
+    margin-right: 15px;
+    margin-top: 10px;
 }
 .image1{
-    top:0;
+    top: 0;
     left:0;
     position:relative;
 
 }
 .image2{
-    top: 20;
-    left: 20;
+    top: 0;
+    left: 0;
     position: absolute;
 }
 .image3{
-    top: 20;
-    left: 20;
+    top: 0;
+    left: 0;
     position: absolute;
 }
 .image4{
-    top: 20;
-    left: 20;
+    top: 0;
+    left: 0;
     position: absolute;
 }
 .images > img{
+    margin-left: 10px;
     width: 70%;
     height: 4.2vh;
     visibility: hidden;
@@ -95,7 +100,7 @@ body {
 }
 .main-dot{
     display: block;
-    margin: 8px 20px 0px 20px;
+    margin: 8px 10px 0px 10px;
 }
 .dot1 {
     height: 25px;
@@ -119,8 +124,9 @@ body {
 .but-but{
     display: flex;
     justify-content: space-between;
-    margin-right: 10rem;
+    margin-right: 9.5rem;
     align-items: center;
+    margin-left: 0.5rem;
 }
 h3{
     color: rgb(255, 255, 255);
@@ -191,7 +197,14 @@ select {
         width: 2%;
         height: 2.5vh;
         margin-right: 5px;
-        margin-top: 4px;
+        margin-top: 0px;
+    }
+    .images{
+        margin-top: 0px;
+    }
+    .image1{
+        top: 5px;
+    
     }
     .container{
         margin-top: 13px;
@@ -241,7 +254,7 @@ select {
         width: 100%;
         height: 3.5vh;
         margin-right: 5px;
-        margin-top: -33px;
+        margin-top: 0px;
     }
     .container{
         margin-top: 10px;
@@ -288,12 +301,13 @@ select {
     }
     .time-mode{
         display: flex;
-        font-size: 19px;
+        font-size: 22px;
+        align-items: center;
     }
     .images > img {
         width: 100%;
         height: 3.5vh;
-        margin-top: -34px;
+        margin-top: -15px;
     }
     .but-mid{
         display: flex;
@@ -351,14 +365,18 @@ select {
         display: flex;
         font-size: 23px;
     }
+    .images{
+        margin-right: 20px;
+    }
     .images > img {
-        width: 100%;
+        width: 130%;
         height: 4vh;
-        margin-right: 0px;
-        margin-top: -38px;
+        margin-right: 5px;
+        margin-top: -10px;
     }
     .but-mid{
         display: flex;
+        margin-top: 15px;
     }
     .container{
         margin-top: 10px;
