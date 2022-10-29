@@ -49,4 +49,4 @@ function displayTime(){
     document.getElementById('hours').innerHTML = hrs;
     document.getElementById('minutes').innerHTML = min;
 }
-setInterval(displayTime, 10);41
+setInterval(displayTime, 10);
