@@ -6,7 +6,7 @@
 /* Page styling for destop mode [1201px and above]*/
 body {
     padding: 10px;
-    color: rgb(249, 249, 249);
+    color: #fff;
     font-size: 25px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -34,57 +34,46 @@ body {
     margin-top: 30px;
     width: 47%;
 }
-.sec-top a img{
+.sec-top a i{
     width: 52%;
     height: 2.8vh;
     margin-top: 36px;
     margin-left: 10px;
+    color: grey;
 }
 .buttom{
     margin-top: 19rem;
 }
 .time-mode{
     display: flex;
-    font-size: 20px;
     width: 100%;
     align-items: center;
-    height: 4vh;
-
+    height: auto;
+    gap: 1rem;
+    padding: .5rem;
 }
 .images{
-    top:0;
-    left:0;
+    display: flex;
+    align-items: center;
     position: relative;
-    width: 7%;
-    margin-right: 15px;
-    margin-top: 10px;
 }
-.image1{
-    top: 0;
-    left:0;
-    position:relative;
 
+.image1{
+    position: absolute;
 }
 .image2{
-    top: 0;
-    left: 0;
     position: absolute;
 }
 .image3{
-    top: 0;
-    left: 0;
-    position: absolute;
+    color: yellow;
 }
 .image4{
-    top: 0;
-    left: 0;
+    color: orange;
     position: absolute;
 }
-.images > img{
-    margin-left: 10px;
-    width: 70%;
-    height: 4.2vh;
+.images > i{
     visibility: hidden;
+    font-size: 30px;
 }
 .but-mid{
     display: flex;
@@ -193,19 +182,6 @@ select {
     .buttom{
         margin-top: 22rem;
     }
-    .time-mode > img {
-        width: 2%;
-        height: 2.5vh;
-        margin-right: 5px;
-        margin-top: 0px;
-    }
-    .images{
-        margin-top: 0px;
-    }
-    .image1{
-        top: 5px;
-    
-    }
     .container{
         margin-top: 13px;
     }
@@ -245,16 +221,6 @@ select {
     }
     .buttom{
         margin-top: 23rem;
-    }
-    .time-mode{
-        display: flex;
-        font-size: 25px;
-    }
-    .images > img {
-        width: 100%;
-        height: 3.5vh;
-        margin-right: 5px;
-        margin-top: 0px;
     }
     .container{
         margin-top: 10px;
@@ -298,19 +264,6 @@ select {
     }
     .buttom{
         margin-top: 18rem;
-    }
-    .time-mode{
-        display: flex;
-        font-size: 22px;
-        align-items: center;
-    }
-    .images > img {
-        width: 100%;
-        height: 3.5vh;
-        margin-top: 0px;
-    }
-    .image1{
-        margin-top: -15px;
     }
     .but-mid{
         display: flex;
@@ -363,19 +316,6 @@ select {
     }
     .buttom{
         margin-top: 9rem;
-    }
-    .time-mode{
-        display: flex;
-        font-size: 23px;
-    }
-    .images{
-        margin-right: 20px;
-    }
-    .images > img {
-        width: 130%;
-        height: 4vh;
-        margin-right: 5px;
-        margin-top: -10px;
     }
     .but-mid{
         display: flex;
